@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WebKiosk</title>
+    <link rel="icon" href="img/Success.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Taha Arab">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- MainCss -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="backDark display-none"></div>
+<div class="modalDetailCard display-none">
+    <div class="flex-row-between">
+        <div class="contentModal">
+            <p>
+                لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم لورم اپیزوم
+            </p>
+            <button type="button" class="closeModal">تایید</button>
+        </div>
+        <div class="modalImages">
+            <ul>
+                <li><img src="img/IMG_2348.jpg" alt="Card Image"></li>
+                <li><img src="img/IMG_2350.jpg" alt="Card Image"></li>
+                <li><img src="img/IMG_2349.jpg" alt="Card Image"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="navBar">
+    <button type="button" class="btn btn-default pull-left prev-step nextTab" value="-1"><img
+            src="img/ArrowBack.svg" alt=""> بازگشت </button>
+    <img src="img/LogoUrl.jpg" alt="Logo" id="logo">
+</div>
+<form target="nothing" name="chaliPayment">
+    <div class="container">
+        <div class="row">
+            <section>
+                <div class="wizard fa">
+                    <form id="regForm" action="">
+                        <div class="tab">
+                            <div class="selectLang">
+                                <div class="head-lang">
+                                    <h3 class="headText">لطفا زبان خود را انتخاب کنید</h3>
+                                    <h3 class="headText">Please select your language</h3>
+                                </div>
+                                <div class="btnPage slideFade flex-row btn-lang">
+                                    <button type="button" class="nextTab next-step" value="1">فارسی</button>
+                                    <button type="button" class="nextTab next-step" value="1">العربیه</button>
+                                    <button type="button" class="nextTab next-step" value="1">English</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="selectService">
+                                <!--<button type="button" class="btn btn-default pull-left prev-step nextTab" value="-1">بازگشت <img
+                                        src="img/ArrowBack.svg" alt=""></button>-->
+                                <h3 class="headText">انتخاب خدمات</h3>
+                                <div class="btnPage slideFade flex-row btn-service">
+                                    <button type="button" class="nextTab next-step" value="1">
+                                        <img src="img/receipt.svg"/>
+                                        صدور بلیط
+                                    </button>
+                                    <button type="button" class="nextTab next-step" value="1">
+                                        <img src="img/Smartphone-Mobilephone-Payment-Online%20Payment-Money.svg"/>
+                                        چاپ بلیط
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!--<button type="button" class="btn btn-default pull-left nextTab prev-step" value="-1">بازگشت <img
+                                    src="img/ArrowBack.svg" alt=""></button>-->
+                            <div class="step2-head">
+                                <h3 class="headText">بلیط خود را انتخاب کنید</h3>
+                            </div>
+                            <div class="cardBuy slideFade">
+                                <div class="row">
+                                    <div class="myFactorCards fa col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <div class="cardsMain slideFade">
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-6 col-xs-6 offer">
+                                                <div class="card-contentBody">
+                                                    <div class="cardImage">
+                                                        <img src="img/IMG_2348.jpg" alt="">
+                                                    </div>
+                                                    <div class="ContentBody">
+                                                        <div class="card-title"><p>بانجی جامپینگ1</p></div>
+                                                        <span class="OldpriceEachBlite"><span class="OldpriceVahed">55000</span> تومان</span>
+                                                        <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                        <div class="button-buy-card">
+                                                            <input type="hidden" value="1">
+                                                            <ul>
+                                                                <li>
+                                                                    <button type="button"
+                                                                            class="plus"><img src="img/D-plus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                                <li class="numberCard">
+                                                                    <span class="TedadBlit">0</span><span> عدد</span>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" disabled
+                                                                            class="minus"><img src="img/D-minus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-on-cards">
+                                                            <button type="button" class="detailCard">جزئیات</button>
+                                                            <button type="button" class="plus">خرید</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="cardImage">
+                                                        <img src="img/IMG_2316.jfif" alt="">
+                                                    </div>
+                                                    <div class="ContentBody">
+                                                        <div class="card-title"><p>بانجی جامپینگ2</p></div>
+                                                        <span class="OldpriceEachBlite"><span class="OldpriceVahed">55000</span> تومان</span>
+                                                        <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                        <div class="button-buy-card">
+                                                            <input type="hidden" value="2">
+                                                            <ul>
+                                                                <li>
+                                                                    <button type="button"
+                                                                            class="plus"><img src="img/D-plus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                                <li class="numberCard">
+                                                                    <span class="TedadBlit">0</span><span> عدد</span>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" disabled
+                                                                            class="minus"><img src="img/D-minus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-on-cards">
+                                                            <button type="button" class="detailCard">جزئیات</button>
+                                                            <button type="button" class="plus">خرید</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-6 col-xs-6 offer">
+                                                <div class="card-contentBody">
+                                                    <div class="cardImage">
+                                                        <img src="img/IMG_2810.jfif" alt="">
+                                                    </div>
+                                                    <div class="ContentBody">
+                                                        <div class="card-title"><p>بانجی جامپینگ3</p></div>
+                                                        <span class="OldpriceEachBlite"><span class="OldpriceVahed">55000</span> تومان</span>
+                                                        <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                        <div class="button-buy-card">
+                                                            <input type="hidden" value="3">
+                                                            <ul>
+                                                                <li>
+                                                                    <button type="button"
+                                                                            class="plus"><img src="img/D-plus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                                <li class="numberCard">
+                                                                    <span class="TedadBlit">0</span><span> عدد</span>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" disabled
+                                                                            class="minus"><img src="img/D-minus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-on-cards">
+                                                            <button type="button" class="detailCard">جزئیات</button>
+                                                            <button type="button" class="plus">خرید</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="cardImage">
+                                                        <img src="img/IMG_3120.jfif" alt="">
+                                                    </div>
+                                                    <div class="ContentBody">
+                                                        <div class="card-title"><p>بانجی جامپینگ4</p></div>
+                                                        <span class="OldpriceEachBlite"><span class="OldpriceVahed">55000</span> تومان</span>
+                                                        <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                        <div class="button-buy-card">
+                                                            <input type="hidden" value="4">
+                                                            <ul>
+                                                                <li>
+                                                                    <button type="button"
+                                                                            class="plus"><img src="img/D-plus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                                <li class="numberCard">
+                                                                    <span class="TedadBlit">0</span><span> عدد</span>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" disabled
+                                                                            class="minus"><img src="img/D-minus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-on-cards">
+                                                            <button type="button" class="detailCard">جزئیات</button>
+                                                            <button type="button" class="plus">خرید</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="cardImage">
+                                                        <img src="img/IMG_3484.jfif" alt="">
+                                                    </div>
+                                                    <div class="ContentBody">
+                                                        <div class="card-title"><p>بانجی جامپینگ5</p></div>
+                                                        <span class="OldpriceEachBlite"><span class="OldpriceVahed">55000</span> تومان</span>
+                                                        <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                        <div class="button-buy-card">
+                                                            <input type="hidden" value="5">
+                                                            <ul>
+                                                                <li>
+                                                                    <button type="button"
+                                                                            class="plus"><img src="img/D-plus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                                <li class="numberCard">
+                                                                    <span class="TedadBlit">0</span><span> عدد</span>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" disabled
+                                                                            class="minus"><img src="img/D-minus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-on-cards">
+                                                            <button type="button" class="detailCard">جزئیات</button>
+                                                            <button type="button" class="plus">خرید</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="cardImage">
+                                                        <img src="img/IMG_3744.jfif" alt="">
+                                                    </div>
+                                                    <div class="ContentBody">
+                                                        <div class="card-title"><p>بانجی جامپینگ6</p></div>
+                                                        <span class="OldpriceEachBlite"><span class="OldpriceVahed">55000</span> تومان</span>
+                                                        <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                        <div class="button-buy-card">
+                                                            <input type="hidden" value="6">
+                                                            <ul>
+                                                                <li>
+                                                                    <button type="button"
+                                                                            class="plus"><img src="img/D-plus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                                <li class="numberCard">
+                                                                    <span class="TedadBlit">0</span><span> عدد</span>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" disabled
+                                                                            class="minus"><img src="img/D-minus.png" alt="">
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-on-cards">
+                                                            <button type="button" class="detailCard">جزئیات</button>
+                                                            <button type="button" class="plus">خرید</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <!--<div class="cardBody col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="card-title"><p>بانجی جامپینگ2</p></div>
+                                                    <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                    <div class="button-buy-card">
+                                                        <input type="hidden" value="2">
+                                                        <ul>
+                                                            <li>
+                                                                <button type="button"
+                                                                        class="plus">+
+                                                                </button>
+                                                            </li>
+                                                            <li class="numberCard">
+                                                                <span class="TedadBlit">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" disabled
+                                                                        class="minus">&#45;&#45;
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="card-title"><p>بانجی جامپینگ3</p></div>
+                                                    <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                    <div class="button-buy-card">
+                                                        <input type="hidden" value="3">
+                                                        <ul>
+                                                            <li>
+                                                                <button type="button"
+                                                                        class="plus">+
+                                                                </button>
+                                                            </li>
+                                                            <li class="numberCard">
+                                                                <span class="TedadBlit">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" disabled
+                                                                        class="minus">&#45;&#45;
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="card-title"><p>بانجی جامپینگ4</p></div>
+                                                    <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                    <div class="button-buy-card">
+                                                        <input type="hidden" value="4">
+                                                        <ul>
+                                                            <li>
+                                                                <button type="button"
+                                                                        class="plus">+
+                                                                </button>
+                                                            </li>
+                                                            <li class="numberCard">
+                                                                <span class="TedadBlit">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" disabled
+                                                                        class="minus">&#45;&#45;
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="card-title"><p>بانجی جامپینگ5</p></div>
+                                                    <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                    <div class="button-buy-card">
+                                                        <input type="hidden" value="5">
+                                                        <ul>
+                                                            <li>
+                                                                <button type="button"
+                                                                        class="plus">+
+                                                                </button>
+                                                            </li>
+                                                            <li class="numberCard">
+                                                                <span class="TedadBlit">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" disabled
+                                                                        class="minus">&#45;&#45;
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>
+                                            <div class="cardBody col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                                <div class="card-contentBody">
+                                                    <div class="card-title"><p>بانجی جامپینگ6</p></div>
+                                                    <span class="priceEachBlite"><span class="priceVahed">50000</span> تومان</span>
+                                                    <div class="button-buy-card">
+                                                        <input type="hidden" value="6">
+                                                        <ul>
+                                                            <li>
+                                                                <button type="button"
+                                                                        class="plus">+
+                                                                </button>
+                                                            </li>
+                                                            <li class="numberCard">
+                                                                <span class="TedadBlit">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" disabled
+                                                                        class="minus">&#45;&#45;
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <span class="allPrice"></span>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                    <div class="factorMain col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                        <div class="factor slideFade">
+                                            <div class="hold-factor">
+                                                <div class="price-factor">
+                                                    <div class="factor-tools">
+                                                        <div class="yourDetail display-none">
+                                                            <p class="yourLeaderyName"></p>
+                                                            <p class="yourMaxTransfer"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="detailFactor fa">
+                                                        <ul>
+
+                                                        </ul>
+                                                    </div>
+                                                    <!--<div class="ticket-number flex-row-between">
+                                                        <span>تعداد: </span>
+                                                        <span class="countBlit"></span>
+                                                    </div>
+                                                    <div class="offer flex-row-between">
+                                                        <span>تخفیف</span>
+                                                        <span class="discount"></span>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paydiv">
+                                <button type="button" class="btn-leadery nextTab next-step" value="1">لیدر
+                                    هستید؟
+                                </button>
+                                <div class="totalAmount">
+                                    <span>تومان</span>
+                                    <span class="FinPrice">0</span>
+                                </div>
+                                <div class="Paybuttons">
+                                    <button type="button" class="Pay btn-pay nextTab next-step" value="2">
+                                        پرداخت
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div id="leaderyCode">
+                                <!--<button type="button" class="btn btn-default pull-left nextTab prev-step" value="-1"><img
+                                        src="img/ArrowBack.svg" alt=""> بازگشت
+                                </button>-->
+                                <div class="inputLeaderyCode slideFade">
+                                    <div class="input-codes">
+                                        <div class="parking-code flex-column">
+                                            <p>کد پارکینگ خود را وارد کنید</p>
+                                            <div class="input-main">
+                                                <input type="text" id="firstInput" class="codeInputBox" autofocus>
+                                            </div>
+                                        </div>
+                                        <div class="leadery-code flex-column">
+                                            <p>کد لیدری خود را وارد کنید</p>
+                                            <div class="input-main">
+                                                <input type="text" id="secondInput" class="codeInputBox">
+                                            </div>
+                                        </div>
+                                        <div class="transfer-type flex-column">
+                                            <p>نوع مسافر را وارد کنید</p>
+                                            <div class="TransferInput flex-row">
+                                                <label for="toristTransfer">توریست</label>
+                                                <input type="radio" id="toristTransfer" name="transferType">
+                                                <label for="persianTransfer" class="active">ایرانی</label>
+                                                <input type="radio" id="persianTransfer" checked name="transferType">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="keypad">
+                                        <div class="hold-keypad slideFade">
+                                            <ul class="first-row key-row">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">7</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">8</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">9</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="second-row key-row">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">6</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="third-row key-row">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">3</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="four-row key-row">
+                                                <li class="submitInputs">
+                                                    <button type="button" class="nextTab next-step" value="-1">تایید</button>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="char">0</a>
+                                                </li>
+                                                <li class="cleanInput">
+                                                    <a href="javascript:void(0);"
+                                                       class="clearKey">
+                                                        <img src="img/kisspng-backspace-delete-key-computer-icons-encapsulated-p-5af5e97c742ea3.3555508215260655324759.png" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab payCard">
+                            <!--<button type="button" class="btn btn-default pull-left nextTab prev-step" value="-2">بازگشت <img
+                                    src="img/ArrowBack.svg" alt="">
+                            </button>-->
+                            <div id="lastFactor" class="slideFade">
+                                <div class="yourDetail display-none">
+                                    <img src="img/Avatar.png" alt="Avatar">
+                                    <p class="yourLeaderyName"></p>
+                                    <p class="yourMaxTransfer"></p>
+                                </div>
+                                <div class="finalFactor">
+                                    <div class="head-lastFactor">
+                                        فاکتور شما
+                                    </div>
+                                    <div class="body-lastFactor">
+                                        <ul></ul>
+                                        <div class="total-price-lastFactor">
+                                            <span>0</span> تومان
+                                        </div>
+                                        <button type="button" class="nextTab pay-button-lastFactor" value="1">پرداخت</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="getCard slideFade">
+                                <img src="img/CreditCard.svg" alt="کارت خود را بکشید">
+                                <div class="get-card-page-price">
+                                    <span>0</span> تومان
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab slideFade">
+                            <button type="button" class="resetForm">صفحه اصلی</button>
+                            <a href="" class="lastMessageTab">
+                                <img src="img/SuccessMessage.svg" alt="Success Message">
+                                <img src="img/ErrorMessage.svg" class="display-none" alt="Error Message">
+                            </a>
+                        </div>
+
+                        <div style="text-align:center;margin-top:40px; display: none">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
+
+                    </form>
+                    <div id="Add-Ons">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/IMG_4935.jpg" alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/IMG_2349.jpg" alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/IMG_2350.jpg" alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</form>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- MainJs -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

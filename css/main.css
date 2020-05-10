@@ -1,0 +1,1268 @@
+@font-face {
+    font-family: Vazir;
+    src: url(../font/VAZIR-FD_0.TTF);
+}
+
+@font-face {
+    font-family: VazirBold;
+    src: url(../font/VAZIR-BOLD-FD_0.TTF);
+}
+@font-face {
+    font-family: VazirMed;
+    src: url(../font/VAZIR-MEDIUM-FD_0.TTF);
+}
+body{
+    background-color: #ffffff;
+}
+.wizard {
+    margin: 2rem auto;
+}
+form{
+    direction: rtl;
+}
+#Add-Ons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 350px;
+    background-color: #101010;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: VazirMed;
+    text-align: center;
+    border-radius: 2rem 2rem 0 0;
+    overflow: hidden;
+    box-shadow: -5px -5px 15px rgba(0, 0, 0, .16);
+}
+#Add-Ons #carousel-example-generic,
+#Add-Ons .carousel-inner{
+    height: 100%;
+}
+#Add-Ons img{
+    width: 100%;
+    height: 100%;
+}
+#Add-Ons .item{
+    width: 100%;
+    height: 100%;
+}
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 65%;
+    margin: 0 auto;
+    left: 15%;
+    top: 50%;
+    z-index: 1;
+}
+
+*{
+    scroll-behavior: smooth;
+    outline: none !important;
+}
+.slideFade{
+    animation: 200ms linear slideFade;
+}
+@keyframes slideFade {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.selectLang .head-lang{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.selectLang,
+.selectService{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.selectLang .btn-lang{
+    padding: 2rem 0 4rem 0;
+}
+.btnPage button{
+    background-color: #497cff;
+    border: none;
+    border-radius: 1rem;
+    color: #ffffff;
+    text-align: center;
+    width: 280px;
+    height: 260px;
+    font-size: 3rem;
+    margin: 8rem 4rem 0;
+    font-family: VazirBold;
+    z-index: 0;
+    position: relative;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.16);
+}
+.btnPage button:active{
+    transform: scale(1.1);
+}
+/*
+.btnPage button:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    z-index: 999999;
+    box-shadow: -30px -30px 30px rgba(255,255,255,0.5);
+}*/
+
+.btn-service img{
+    width: 60px;
+    height: 110px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+.btn-service button{
+    height: 290px;
+    width: 350px;
+}
+.selectService{
+    padding: 3rem 0 7rem 0;
+}
+.headText{
+    font-size: 5rem;
+    color: #373239;
+    font-family: VazirBold;
+    clear: both;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.list-inline li button{
+    font-size: 2rem;
+    background-color: #3438D8;
+    width: 150px;
+    height: 40px;
+    font-family: Vazir;
+}
+
+.step2-head{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.step2-head .headText{
+    font-size: 4.5rem !important;
+    color: #373239;
+    font-family: VazirBold;
+}
+.wizard.en .prev-step{
+    direction: rtl !important;
+}
+.prev-step{
+    color: #373239;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    font-family: VazirMed;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    padding: .5rem 3rem;
+}
+.prev-step:hover,
+.prev-step:focus,
+.prev-step:active:hover{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.prev-step:active{
+    transition: all 500ms;
+    left: 0;
+}
+.prev-step img{
+    width: 45px;
+    height: 25px;
+}
+
+/** Card **/
+.cardBuy{
+    padding: 2rem 0 0;
+}
+.cardBuy .cardBody{
+    height: 330px;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    padding: .5rem 1.5rem 3rem 1.5rem;
+}
+.card-contentBody{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.4rem;
+    box-shadow: 6px 6px 10px rgba(0,0,0,.16);
+}
+.cardImage{
+    height: 55%;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    margin: auto;
+    vertical-align: middle;
+}
+.cardImage img{
+    width: 100%;
+    height: 100%;
+}
+.card-title{
+    text-align: center;
+    font-size: 2rem;
+    font-family: VazirMed;
+    padding-top: .5rem;
+    background-color: #ffffff;
+    color: #373239;
+}
+.offer .OldpriceEachBlite{
+    display: block !important;
+    color: rgba(55, 50, 57, .7);
+    text-decoration: line-through;
+    font-family: VazirMed;
+    font-size: 1.2rem;
+    line-height: 8px;
+}
+.OldpriceEachBlite{
+    display: none;
+}
+.button-buy-card ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+li,li:hover,li:active,li:focus,a,a:hover,a:active,a:focus{
+    text-decoration: none;
+    list-style: none;
+}
+
+.button-buy-card .plus,
+.button-buy-card .minus{
+    position: absolute;
+    bottom: 4rem;
+}
+.button-buy-card .plus{
+    right: -17px;
+}
+.button-buy-card .minus{
+    left: -17px;
+    bottom: 3.8rem !important;
+}
+.button-buy-card .plus:active,
+.button-buy-card .minus:active{
+    transform: scale(.9);
+}
+.button-buy-card ul li{
+    text-align: center;
+}
+.button-buy-card ul li button{
+    border: none;
+    background-color: transparent;
+}
+.button-buy-card ul li.numberCard{
+    color: #373239;
+    font-size: 2rem;
+    font-family: Vazir;
+    display: block;
+}
+.btn-on-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: .5rem;
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    left: 0;
+}
+.btn-on-cards button{
+    border-radius: 5rem;
+    border: 1px solid #373239;
+    border-bottom: 3px solid #373239;
+    font-family: VazirMed;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    width: 45%;
+    background-color: transparent;
+}
+.btn-on-cards button:active{
+    border-bottom: 1px solid #373239;
+    margin-top: 2px;
+}
+.btn-on-cards button.plus{
+    background-color: #daf3ff;
+    font-weight: bolder;
+}
+
+
+/** Factor **/
+.factor{
+    /*padding: 7rem 2rem 5rem 2rem;*/
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.container {
+    width: 100% !important;
+}
+@media (min-width: 992px){
+    .container {
+        width: 100%;
+    }
+}
+.flex-row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hold-factor{
+    background-image: url("../img/Pattern.png");
+    background-repeat: repeat;
+    background-size: 250px;
+    background-position: center;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 0;
+    height: 79%;
+}
+.head-factor{
+    border-radius: 1rem 1rem 0 0;
+    font-size: 2.4rem;
+    font-family: VazirBold;
+    color: #373239;
+    /*border: 1px solid #373239;*/
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+.offer{
+    padding-top: 2rem;
+}
+
+.price-factor{
+    font-size: 1.5rem;
+    color: #373239;
+    font-family: Vazir;
+    padding: .5rem .5rem 0;
+    height: 100%;
+}
+.list-inline{
+    margin: 0 0 0 auto;
+    text-align: right;
+}
+
+
+.final-step{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/** Leadery Code **/
+#leaderyCode{
+    margin: auto;
+    direction: ltr;
+    padding: 1rem;
+}
+.inputLeaderyCode{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.input-codes{
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: 40%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.input-main input{
+    color: #ffffff;
+    background-color: #373239;
+    max-width: 300px;
+    border-radius: 3rem;
+    padding: 1.5rem 2rem;
+    margin: 0 auto;
+    border: none;
+    font-size: 2.5rem;
+    font-family: VazirMed;
+    letter-spacing: .5rem;
+    box-shadow: 0 5px 0 #1e1c21;
+}
+.parking-code p,
+.leadery-code p,
+.transfer-type p{
+    padding-top: 2.8rem;
+    font-family: VazirBold;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #373239;
+}
+
+.leadery-code{
+    padding-top: 1.5rem;
+}
+
+
+
+#keypad{
+    width: 100%;
+    margin: 1rem auto 0 auto;
+}
+.hold-keypad{
+    padding: 1rem 5rem;
+}
+.key-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+.hold-keypad ul li{
+    padding: .5rem 0;
+    width: 32%;
+    position: relative;
+}
+.key-row li a{
+    background-color: #497cff;
+    box-shadow: 0 5px 0 #346cff;
+    border-radius: 2.5rem;
+    height: 90px;
+    text-align: center;
+    display: block;
+    font-size: 5rem;
+    color: #ffffff;
+    font-family: VazirMed;
+    margin: auto;
+    padding: 1.5rem 0;
+}
+.hold-keypad li a:active,
+.hold-keypad li button:active{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 0 #346cff !important;
+}
+.key-row li a:hover,
+.key-row li a:focus{
+    color: #ffffff;
+}
+.cleanInput a{
+    background-color: #abaaab !important;
+    box-shadow: 0 5px 0 #919191 !important;
+}
+.submitInputs button{
+    border: none;
+    background-color: #497cff;
+    box-shadow: 0 5px 0 #346cff;
+    color: #ffffff;
+    font-family: VazirMed;
+    font-size: 3rem;
+    border-radius: 2.5rem;
+    width: 100% !important;
+    height: 90px;
+}
+
+.cleanInput .clearKey img{
+    width: 75px;
+    height: 52px;
+}
+.cleanInput a{
+    padding: 1rem !important;
+}
+
+#lastFactor{
+    margin: 8rem auto 0;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+.finalFactor{
+    box-shadow: 5px 5px 15px rgba(0,0,0,.16);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.head-lastFactor{
+    padding: 1rem 2rem 1rem;
+    box-shadow: 5px 0 10px rgba(0,0,0,.16);
+    font-family: VazirBold;
+    background-color: #497cff;
+    color: #ffffff;
+    font-size: 2rem;
+}
+.body-lastFactor{
+    padding: 0 10px;
+    margin: auto;
+    background-image: url("../img/Pattern.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px;
+}
+.body-lastFactor .pay-button-lastFactor{
+    font-family: VazirBold;
+    font-size: 3rem;
+    background-color: #497cff;
+    color: #ffffff;
+    padding: .5rem 6rem;
+    border: none;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 1rem;
+    font-weight: normal;
+}
+.body-lastFactor .pay-button-lastFactor:active{
+    font-weight: bolder;
+    background-color: #1f61ff;
+}
+.body-lastFactor ul{
+    min-height: 250px;
+    max-height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+.body-lastFactor ul li {
+    margin: 1rem 0;
+}
+.total-price-lastFactor{
+    font-family: VazirBold;
+    font-size: 3rem;
+    color: #373239;
+}
+.creditFactor{
+    background-color: #ffffff;
+    color: #373239;
+    font-family: Vazir;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    width: 550px;
+    margin: 2rem auto 0;
+    border: 2px solid #373239;
+}
+.getCard{
+    text-align: center;
+}
+.getCard img{
+    width: 100%;
+    max-width: 600px;
+}
+.get-card-page-price{
+    font-family: VazirBold;
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: #373239;
+}
+ul{
+    padding-left: 0;
+}
+
+.display-block{
+    display: block !important;
+}
+.display-none{
+    display: none !important;
+}
+
+.inModal{
+    animation: 400ms inModal;
+}
+@keyframes inModal {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.outModal{
+    animation: 400ms OutModal;
+}
+@keyframes OutModal {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.inOp{
+    animation: 400ms inOp;
+}
+@keyframes inOp {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.outOp{
+    animation: 400ms OutOp;
+}
+@keyframes OutOp {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.yourDetail{
+    padding: 1rem;
+    margin: auto auto 1rem;
+    background-color: #ffffff;
+    width: 95%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.16);
+    border-radius: .5rem;
+}
+.yourDetail img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 2rem;
+}
+.yourDetail p{
+    font-family: VazirBold;
+    line-height: 20px;
+    font-size: 2rem;
+    color: #373239;
+}
+#lastFactor .yourDetail{
+    width: 100%;
+    text-align: right;
+    border-radius: 1rem;
+}
+body,html{
+    height: 100%;
+    position: relative;
+}
+.container{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center !important;
+    margin: auto;
+    height: 100%;
+}
+.row{
+    align-items: center;
+    margin: auto;
+}
+
+.allPrice{
+    font-family: VazirMed;
+    font-size: 1.4rem;
+    color: #707070;
+    line-height: 3.5rem;
+}
+.priceEachBlite{
+    font-family: VazirBold;
+    font-size: 2rem;
+    color: #373239;
+    padding: .3rem;
+    text-align: center;
+}
+
+
+.Selected{
+    transform: scale(1.05);
+}
+.Selected .card-contentBody{
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.4);
+}
+
+.ticket-number{
+    display: block;
+}
+
+/** Custom ScrollBar Factor **/
+.detailFactor::-webkit-scrollbar,
+.body-lastFactor ul::-webkit-scrollbar,
+.modalImages::-webkit-scrollbar{
+    width: 10px;
+}
+.cardsMain::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+.detailFactor::-webkit-scrollbar-track,
+.cardsMain::-webkit-scrollbar-track,
+.body-lastFactor ul::-webkit-scrollbar-track,
+.modalImages::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 1rem;
+}
+
+/* Handle */
+.detailFactor::-webkit-scrollbar-thumb,
+.cardsMain::-webkit-scrollbar-thumb,
+.body-lastFactor ul::-webkit-scrollbar-thumb,
+.modalImages::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+.detailFactor::-webkit-scrollbar-thumb:hover,
+.cardsMain::-webkit-scrollbar-thumb:hover,
+.body-lastFactor ul::-webkit-scrollbar-thumb:hover,
+.modalImages::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+.detailFactor{
+    width: 100%;
+    padding: .5rem 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.height68{
+    height: 68%;
+}
+.detailFactor ul{
+    padding-right: 0;
+    display: flow-root;
+}
+.detailFactor ul li{
+    color: #373239;
+    float: right !important;
+    padding: .5rem;
+}
+.factorMain{
+    padding: 0;
+    position: absolute;
+    height: 100%;
+}
+.factorCard{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+    font-family: VazirBold;
+    text-align: center;
+}
+.myFactorCards{
+    padding-right: 25px;
+}
+
+.paydiv{
+    position: fixed;
+    width: 25%;
+    bottom: 5px;
+    background-color: #497cff;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem 0 1rem 0;
+    height: 110px;
+}
+.totalAmount{
+    width: 100%;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: VazirBold;
+    padding: 1rem 1rem 1rem 3rem;
+    color: #ffffff;
+}
+.Paybuttons{
+    clear: both;
+}
+.Pay{
+    width: 100%;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    font-family: VazirBold;
+}
+.btn-leadery{
+    width: 100%;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: transparent;
+    font-family: VazirMed;
+    border: none;
+}
+.detailFactor ul li .tedad-price {
+    /*display: flex;
+    flex-direction: row;*/
+    justify-content: space-between;
+    text-align: center;
+}
+.factorName{
+    font-size: 2rem;
+}
+.factorNumber{
+    font-size: 1.8rem;
+}
+.closeModal{
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+/*.factorHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+.fac-row{
+    border-bottom: 2px solid rgba(55, 50, 57, 0.3);
+}
+.btn-delete-fac{
+    background-color: transparent;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.btn-delete-fac:active{
+    box-shadow: none;
+    transform: scale(1.3);
+}
+.controlNumberFactor{
+    padding-top: 1rem;
+    justify-content: space-around;
+}
+.controlNumberFactor button{
+    border: none;
+    font-size: 2.5rem;
+    letter-spacing: -4px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.controlNumberFactor .factor-plus{
+    color: #8FC431;
+}
+.controlNumberFactor .factor-minus {
+    color: #D83E0B;
+}
+
+.controlNumberFactor .factor-plus:active,
+.controlNumberFactor .factor-minus:active {
+    transform: scale(1.3);
+}
+
+
+
+.transfer-type label{
+    font-size: 2rem;
+    font-family: VazirMed;
+    color: #373239;
+    background-color: #ffffff;
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+.transfer-type .active{
+    color: #ffffff;
+    background-color: #497cff;
+    box-shadow: 0 5px 0 rgb(52, 108, 255);
+}
+.transfer-type input{
+    display: none;
+}
+.alertPayment{
+    background-color: #ffffff;
+    border-radius: 1rem;
+    width: 400px;
+    height: 150px;
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,0.16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999999;
+}
+.alertPayment p{
+    margin: auto;
+    font-size: 2rem;
+    font-family: Vazir;
+    padding-top: 6rem;
+    text-align: center;
+}
+.closePayment{
+    position: absolute;
+    right: -10rem;
+    top: 0;
+}
+
+.paymentStatus{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-family: Vazir;
+    text-align: center;
+}
+.successStatus{
+    color: #15CD72;
+    background-color: #efefef;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,0.06);
+}
+.errorStatus{
+    color: #ED4F32;
+    background-color: #efefef;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,0.06);
+}
+
+
+/** Step Form **/
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    border: 1px solid rgba(255, 47, 49, 0.6);
+    background-color: rgba(255, 47, 49, 0.6);
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+    max-width: 1800px;
+    margin: 8rem auto 37rem;
+}
+.tab:nth-child(4){
+    background-image: url("../img/Pattern.png");
+    background-size: 480px;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4CAF50;
+}
+text{
+    font-family: VazirMed;
+}
+.cardsMain{
+    padding-left: 0;
+    min-height: 320px;
+    max-height: 680px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.cardsMain .col-lg-9,
+.cardsMain .col-md-4,
+.cardsMain .col-sm-4,
+.cardsMain .col-xs-6{
+    padding: .5rem 2rem !important;
+}
+
+.lastMessageTab{
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.lastMessageTab img{
+    max-width: 600px;
+    max-height: 600px;
+}
+.lastMessageTab p {
+    position: absolute;
+    top: 80px;
+    right: 350px;
+    color: #ffffff;
+    font-family: VazirBold;
+    font-size: 2rem;
+}
+.resetForm{
+    background-color: #497cff;
+    color: #ffffff;
+    font-family: VazirBold;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem 4rem;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: -10rem;
+    left: 2rem;
+}
+
+.height80{
+    height: 80.2%;
+}
+
+/** Modal **/
+.backDark{
+    background-color: rgba(55, 50, 57, 0.6);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.modalDetailCard{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+    width: 860px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.modalDetailCard .flex-row-between{
+    height: 100%;
+}
+.modalDetailCard img{
+    width: 100%;
+    max-height: 200px;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.modalDetailCard img.active{
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-height: 100%;
+    animation: 200ms inModal;
+}
+.modalImages{
+    width: 37%;
+    overflow-y: auto;
+    touch-action: pan-y;
+    height: 100%;
+    text-align: center;
+    padding-right: 1rem;
+}
+.contentModal{
+    width: 60%;
+}
+.contentModal p{
+    font-family: VazirMed;
+    text-align: right;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.contentModal .closeModal{
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+    left: 0;
+    top: auto;
+    margin: auto;
+    background-color: #ffffff;
+    color: #373239;
+    border: 1px solid #373239;
+    border-bottom: 3px solid #373239;
+    border-radius: 5rem;
+    font-family: VazirBold;
+    font-size: 2.5rem;
+    padding: .5rem 4rem;
+}
+.contentModal .closeModal:active{
+    border-bottom: 1px solid #373239;
+    margin-top: 5px;
+}
+
+/** Nav Bar **/
+#navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 80px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.16);
+    border-radius: 0 0 2rem 2rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+#navBar #logo{
+    max-width: 120px;
+    max-height: 50px;
+    margin: auto 0 auto auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1400px) {
+    .cardBuy .cardBody{
+        height: 420px;
+    }
+}
+@media (max-width: 1200px) {
+    #Pay{
+        padding: 1.3rem 3rem;
+    }
+}
+@media (min-height: 1050px) {
+    .tab {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        right: 20px;
+        transform: translateY(-85%);
+        overflow: unset;
+    }
+    .tab:nth-child(3),
+    .tab:nth-child(4){
+        position: unset !important;
+        transform: translateY(0) !important;
+    }
+}
+/*@media (min-height: 1150px) {
+    .hold-factor{
+        height: 85.7% !important;
+    }
+}*/
+/*@media (min-width: 1399px) {
+    .detailFactor{
+        height: 75% !important;
+    }
+    .factorMain{
+        height: 65% !important;
+    }
+}*/
+@media (max-width: 1300px){
+    .totalAmount{
+        width: 100%;
+        float: left;
+        clear: both;
+        display: flex;
+        font-family: VazirMed;
+    }
+    .Paybuttons{
+        clear: both;
+    }
+}
+@media (max-width: 900px){
+    .btnPage button{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .modalDetailCard{
+        width: 100%;
+    }
+}
+.cardsMain.en{
+    float: right !important;
+}
+.detailFactor.en ul li{
+    float: left !important;
+}
+.detailFactor.en ul li .factorCard{
+    direction: ltr !important;
+}
+.detailFactor.fa ul li{
+    float: right !important;
+}
+.wizard.en{
+    direction: ltr;
+}
+.wizard.en .button-buy-card{
+    direction: rtl !important;
+}
+.wizard.en .myFactorCards{
+    float: right;
+}

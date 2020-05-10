@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="127.767" height="154" viewBox="0 0 127.767 154">
+  <g id="Smartphone-Mobilephone-Payment-Online_Payment-Money" data-name="Smartphone-Mobilephone-Payment-Online Payment-Money" transform="translate(-3 0.271)">
+    <rect id="Rectangle_73" data-name="Rectangle 73" width="96" height="154" rx="6" transform="translate(34.767 -0.271)" fill="#5aaae7"/>
+    <path id="Path_115" data-name="Path 115" d="M75.35,19.667V94.357a2.667,2.667,0,0,1-2.667,2.667H22V17H72.682A2.667,2.667,0,0,1,75.35,19.667Z" transform="translate(12.307 20.127)" fill="#3d9ae2"/>
+    <path id="Path_118" data-name="Path 118" d="M29,92.357V17.667A2.667,2.667,0,0,1,31.67,15h-8A2.667,2.667,0,0,0,21,17.667V92.357a2.667,2.667,0,0,0,2.667,2.667h8A2.667,2.667,0,0,1,29,92.357Z" transform="translate(13.197 16.792)" fill="#d4d4d4"/>
+    <path id="Path_119" data-name="Path 119" d="M52,53a5.335,5.335,0,1,1,0,10.67H41.335a5.335,5.335,0,1,1,0-10.67Z" transform="translate(35.651 80.156)" fill="#e6e7e8"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="10.5" cy="10.5" r="10.5" transform="translate(50.767 61.729)" fill="#ffd422"/>
+    <path id="Path_125" data-name="Path 125" d="M31,6h5.335v5.335H31Z" transform="translate(27.314 1.784)" fill="#78b9eb"/>
+    <path id="Path_126" data-name="Path 126" d="M35,6H61.675v5.335H35Z" transform="translate(33.984 1.784)" fill="#78b9eb"/>
+    <path id="Path_127" data-name="Path 127" d="M40,14h5.335v96.029H40Z" transform="translate(42.321 15.124)" fill="#3d9ae2"/>
+    <path id="Rectangle_74" data-name="Rectangle 74" d="M5,0H41a0,0,0,0,1,0,0V80a0,0,0,0,1,0,0H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(39.767 31.729)" fill="#fff"/>
+    <path id="Path_128" data-name="Path 128" d="M39,12h5.335v96.029H39Z" transform="translate(40.654 11.789)" fill="#1e81ce"/>
+    <path id="Path_122" data-name="Path 122" d="M59.35,26.335A5.215,5.215,0,0,1,57.776,30.1a5.348,5.348,0,0,1-3.761,1.6l-10.67-.027A16.005,16.005,0,0,1,42.438,37a14.566,14.566,0,0,1-.934,2.081,15.035,15.035,0,0,1-.827,1.414,14.708,14.708,0,0,1-2.667,3.068V69.015H6V26.335l13.337-.027L30.007,21H54.015A5.351,5.351,0,0,1,59.35,26.335Z" transform="translate(-3 26.797)" fill="#ffc477"/>
+  </g>
+</svg>

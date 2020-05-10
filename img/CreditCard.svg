@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="910.713" height="567.988" viewBox="0 0 910.713 567.988">
+  <defs>
+    <filter id="Path_83" x="0" y="0" width="910.713" height="567.988" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_62" data-name="Group 62" transform="translate(9 6)">
+    <g id="surface1" transform="translate(0 0)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Path_83)">
+        <path id="Path_83-2" data-name="Path 83" d="M0,476.956V73.633C0,33.136,33.315.3,74.4.3H818.322c41.083,0,74.4,32.835,74.4,73.333V476.956c0,40.5-33.312,73.332-74.4,73.332H74.4C33.315,550.289,0,517.454,0,476.956Zm0,0" transform="translate(9 5.7)" fill="#497cff"/>
+      </g>
+      <path id="Path_85" data-name="Path 85" d="M40.832,163.609h73.333v36.666H40.832Zm0,0" transform="translate(32.501 271.212)" rx="25" fill="#fff"/>
+      <path id="Path_88" data-name="Path 88" d="M102.074,163.609H175.4v36.666H102.074Zm0,0" transform="translate(84.152 271.212)" rx="25" fill="#fff"/>
+      <path id="Path_89" data-name="Path 89" d="M163.313,163.609h73.332v36.666H163.313Zm0,0" transform="translate(134.642 271.212)" rx="25" fill="#fff"/>
+      <path id="Path_90" data-name="Path 90" d="M224.555,163.609h73.332v36.666H224.555Zm0,0" transform="translate(185.136 271.212)" rx="25" fill="#fff"/>
+      <path id="Path_91" data-name="Path 91" d="M418.484,41.129H455.15v55H418.484Zm0,0" transform="translate(345.896 32.204)" rx="25" fill="#fff"/>
+      <path id="Path_92" data-name="Path 92" d="M377.656,41.129h36.666v55H377.656Zm0,0" transform="translate(310.9 32.204)" rx="25" fill="#fff"/>
+      <path id="Path_93" data-name="Path 93" d="M336.828,41.129h36.666v55H336.828Zm0,0" transform="translate(277.288 32.204)" rx="25" fill="#fff"/>
+      <path id="Path_94" data-name="Path 94" d="M296,41.129h36.659v55H296Zm0,0" transform="translate(243.679 32.204)" rx="25" fill="#fff"/>
+      <path id="Path_98" data-name="Path 98" d="M40.832,158.459v-88A29.326,29.326,0,0,1,70.167,41.129h88A29.32,29.32,0,0,1,187.49,70.463v88a29.319,29.319,0,0,1-29.327,29.334h-88A29.326,29.326,0,0,1,40.832,158.459Zm0,0" transform="translate(32.501 32.316)" rx="25" fill="#fff"/>
+      <path id="Path_99" data-name="Path 99" d="M40.832,71.75h55v36.666h-55Zm0,0" transform="translate(32.501 56.694)" fill="#497cff"/>
+      <path id="Path_100" data-name="Path 100" d="M91.867,71.75h54.992v36.666H91.867Zm0,0" transform="translate(75.678 56.694)" fill="#497cff"/>
+      <path id="Path_101" data-name="Path 101" d="M224.555,163.609H462.722v36.666H224.555Zm0,0" transform="translate(338.165 271.212)" fill="#fff"/>
+    </g>
+    <text id="کارت_خود_را_بکشید" data-name="کارت خود را بکشید" transform="translate(446 291.694)" fill="#fff" font-size="48" font-family="Vazir-FD, Vazir FD"><tspan x="-174.258" y="0">کارت خود را بکشید</tspan></text>
+  </g>
+</svg>
